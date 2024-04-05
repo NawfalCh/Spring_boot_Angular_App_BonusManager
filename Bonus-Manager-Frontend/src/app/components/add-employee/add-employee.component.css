@@ -1,0 +1,12 @@
+
+
+.flex-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.space{
+  margin-left: 25px;
+}
+

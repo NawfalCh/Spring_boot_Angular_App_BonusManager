@@ -1,0 +1,43 @@
+<div class="flex-container">
+  <form [formGroup]="employeeForm">
+    <table>
+      <tr>
+        <td>
+          <mat-form-field class="demo-full-width">
+            <input matInput placeholder="Firstname" formControlName="firstname"  required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="demo-full-width">
+            <input matInput placeholder="Lastname" formControlName="lastname"  required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="demo-full-width">
+            <input matInput placeholder="Job Titel" formControlName="jobTitel"  required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="demo-full-width">
+            <input matInput placeholder="Unit" formControlName="unit"  required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button mat-raised-button color="primary" class="submit-button" (click)="addEmpl()"  [disabled]="employeeForm.invalid" >add Eployee</button>
+          <span class="space"></span>
+          <button mat-raised-button color="primary" class="submit-button"  (click)="closeDialog()" >Close</button>
+        </td>
+      </tr>
+
+    </table>
+
+  </form >
+</div>

@@ -1,0 +1,30 @@
+<div class="flex-container">
+  <button class="button1" (click)="addEmployee()" > Add new Employee</button>
+</div>
+
+
+<table>
+  <thead>
+  <tr>
+    <th>Code</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Job Titel</th>
+    <th>Unit</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let employee of employees">
+    <td>{{employee.code}}</td>
+    <td>{{employee.firstname}}</td>
+    <td>{{ employee.lastname}}</td>
+    <td>{{ employee.jobTitel}}</td>
+    <td>{{ employee.unit }}</td>
+    <td>
+      <button class="addbonus"  (click)="updateEmployee(employee.employeeId)">Update</button>
+      <button class="viewbonus" (click)="deleteEmployee(employee.employeeId)" >Delete</button>
+    </td>
+  </tr>
+  </tbody>
+</table>

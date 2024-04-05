@@ -1,0 +1,32 @@
+
+
+<table>
+  <thead>
+  <tr>
+    <th>Employee Code</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Job Titel</th>
+    <th>Unit</th>
+    <th>Bonus Year</th>
+    <th>Total Bonus</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let pendingB of pendingB">
+    <td>{{pendingB.employeeCode}}</td>
+    <td>{{pendingB.firstname}}</td>
+    <td>{{ pendingB.lastname}}</td>
+    <td>{{ pendingB.jobTitel}}</td>
+    <td>{{ pendingB.unit }}</td>
+    <td>{{ pendingB.year }}</td>
+    <td>{{ pendingB.totalBonus }}</td>
+    <td>
+      <button *ngIf="isCEOLoggedIn()" class="approve" (click)="approveBonus(pendingB.employeeCode,pendingB.id)" >approve Bonus</button>
+      <button *ngIf="isCEOLoggedIn()" class="cancel" (click)="cancelPendingB(pendingB.id)" >Cancel Bonus</button>
+
+    </td>
+  </tr>
+  </tbody>
+</table>

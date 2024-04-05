@@ -1,0 +1,10 @@
+.bb {
+  border-style: inset;
+  border-width: medium;
+  border-radius: 3px;
+}
+
+.cc{
+  width: 300px;
+  margin-left: 20px
+}

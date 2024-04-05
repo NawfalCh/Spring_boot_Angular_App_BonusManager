@@ -1,0 +1,92 @@
+<div class="flex-container">
+  <div>
+    <p>Bonus for Employee:</p>
+    <ul>
+      <li><b>Code</b>: {{code}}</li>
+      <li><b>Firstname</b>: {{firstname}}</li>
+      <li><b>Lastname</b>: {{lastname}}</li>
+    </ul>
+  </div>
+
+  <div>
+    <p><b>Year of Bonus</b>: {{year}}</p>
+    <table>
+      <thead>
+      <tr>
+        <th>Social Skills</th>
+        <th>Rating</th>
+        <th>Max Rating</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Attitude</td>
+        <td>
+          <p>{{attitude}}</p>
+        </td>
+        <td>4</td>
+        <td>{{price1}} Euro</td>
+      </tr>
+      <tr>
+        <td>Behaviour</td>
+        <td>
+          <p>{{behaviour}}</p>
+        </td>
+        <td>4</td>
+        <td>{{price2}} Euro</td>
+      </tr>
+      <tr>
+        <td>Communication</td>
+        <td>
+          <p>{{communication}}</p>
+        </td>
+        <td>4</td>
+        <td>{{price3}} Euro</td>
+      </tr>
+      <tr>
+        <td>Integrity</td>
+        <td>
+          <p>{{integrity}}</p>
+        </td>
+        <td>4</td>
+        <td>{{price4}} Euro</td>
+      </tr>
+      <tr>
+        <td>Leadership</td>
+        <td>
+          <p>{{leadership}}</p>
+        </td>
+        <td>4</td>
+        <td>{{price5}} Euro</td>
+      </tr>
+      <tr>
+        <td>Openness</td>
+        <td>
+          <p>{{openness}}</p>
+        </td>
+        <td>4</td>
+        <td>{{price6}} Euro</td>
+      </tr>
+
+      </tbody>
+    </table>
+
+  </div>
+  <div>Total Bonus: {{totalBonus}} Euro</div>
+
+  <div>
+    <form [formGroup]="remarqueForm">
+      <p>Enter your Remaque to approve Bonus </p>
+      <textarea placeholder="add a Remarque..." formControlName="remarque"  required></textarea>
+
+    </form>
+  </div>
+
+  <div>
+    <button mat-raised-button color="primary" class="submit-button" (click)="approveBonus()" [disabled]="remarqueForm.invalid">Approve</button>
+    <span class="space"></span>
+    <button mat-raised-button color="primary" class="submit-button"  (click)="closeDialog()" >Close</button>
+  </div>
+
+
+</div>

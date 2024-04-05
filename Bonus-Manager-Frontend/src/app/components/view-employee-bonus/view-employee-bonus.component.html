@@ -1,0 +1,29 @@
+<table>
+  <thead>
+  <tr>
+    <th>Bonus Year</th>
+    <th>Employee Code</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Job Titel</th>
+    <th>Unit</th>
+    <th>Total Bonus</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let approvedBonus of approvedBonus">
+    <td>{{ approvedBonus.year }}</td>
+    <td>{{approvedBonus.employeeCode}}</td>
+    <td>{{approvedBonus.firstname}}</td>
+    <td>{{ approvedBonus.lastname}}</td>
+    <td>{{ approvedBonus.jobTitel}}</td>
+    <td>{{ approvedBonus.unit }}</td>
+    <td>{{ approvedBonus.totalBonus }}</td>
+    <td>
+      <button  class="approve" (click)="showBonuDetail(approvedBonus.id)" >Show Details</button>
+
+    </td>
+  </tr>
+  </tbody>
+</table>

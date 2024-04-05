@@ -1,0 +1,15 @@
+<mat-toolbar *ngIf="isCEOLoggedIn || isHRLoggedIn"  style="background-color: #555555;color: white">
+  <button mat-button routerLink="dashboard"><h2>Bonus Manager by Nawfal</h2></button>
+  <button *ngIf="isHRLoggedIn" mat-button >HR LoggedIn</button>
+  <button *ngIf="isCEOLoggedIn" mat-button >CEO LoggedIn</button>
+
+  <span class="spacer"></span>
+
+
+
+  <button mat-button routerLink="dashboard" routerLinkActive="active">Dashboard</button>
+  <button mat-button routerLink="pending-bonus" routerLinkActive="active">pending-bonus</button>
+  <button *ngIf="isHRLoggedIn" mat-button routerLink="manage-employee" routerLinkActive="active">Manage-Employee</button>
+  <button mat-button  routerLinkActive="active" (click)="logout()">logout</button>
+</mat-toolbar>
+<router-outlet></router-outlet>

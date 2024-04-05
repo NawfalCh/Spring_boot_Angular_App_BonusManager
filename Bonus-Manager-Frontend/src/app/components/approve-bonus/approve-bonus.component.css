@@ -1,0 +1,36 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #555555;
+
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 98%;
+  margin: 5px;
+  padding:5px;
+  text-align: left;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 95%;
+  margin: 7px auto auto;
+
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+.space{
+  margin-left: 30px;
+}
+
+input{
+  width: 110px;
+}

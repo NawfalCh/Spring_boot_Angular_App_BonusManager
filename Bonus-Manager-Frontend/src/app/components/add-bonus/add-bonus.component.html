@@ -1,0 +1,83 @@
+<div class="flex-container">
+  <div>
+    <p>Bonus for Employee:</p>
+    <ul>
+      <li><b>Code</b>: {{code}}</li>
+      <li><b>Firstname</b>: {{firstname}}</li>
+      <li><b>Lastname</b>: {{lastname}}</li>
+    </ul>
+
+  </div>
+  <div>
+    <form [formGroup]="pendingBForm">
+      <label>Enter Year of Bonus: </label>
+      <input type="number" placeholder="Year of Bonus" formControlName="year"  required>
+      <table>
+        <thead>
+        <tr>
+          <th>Social Skills</th>
+          <th>Rating</th>
+          <th>Max Rating</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Attitude</td>
+          <td>
+            <input type="number"  formControlName="Attitude" (input)="calcTotalBonus()"  required>
+          </td>
+          <td>4</td>
+          <td>{{price1}} Euro</td>
+        </tr>
+        <tr>
+          <td>Behaviour</td>
+          <td>
+            <input type="number"  formControlName="Behaviour" (input)="calcTotalBonus()"  required>
+          </td>
+          <td>4</td>
+          <td>{{price2}} Euro</td>
+        </tr>
+        <tr>
+          <td>Communication</td>
+          <td>
+            <input type="number"  formControlName="Communication" (input)="calcTotalBonus()"  required>
+          </td>
+          <td>4</td>
+          <td>{{price3}} Euro</td>
+        </tr>
+        <tr>
+          <td>Integrity</td>
+          <td>
+            <input type="number"  formControlName="Integrity" (input)="calcTotalBonus()" required>
+          </td>
+          <td>4</td>
+          <td>{{price4}} Euro</td>
+        </tr>
+        <tr>
+          <td>Leadership</td>
+          <td>
+            <input type="number"  formControlName="Leadership" (input)="calcTotalBonus()" required>
+          </td>
+          <td>4</td>
+          <td>{{price5}} Euro</td>
+        </tr>
+        <tr>
+          <td>Openness</td>
+          <td>
+            <input type="number"  formControlName="Openness" (input)="calcTotalBonus()" required>
+          </td>
+          <td>4</td>
+          <td>{{price6}} Euro</td>
+        </tr>
+
+        </tbody>
+      </table>
+    </form>
+  </div>
+  <div>Total Bonus: {{totalBonus}} Euro</div>
+  <div>
+    <button mat-raised-button color="primary" class="submit-button" (click)="addPendingB()" [disabled]="pendingBForm.invalid"  >Add</button>
+    <span class="space"></span>
+    <button mat-raised-button color="primary" class="submit-button"  (click)="closeDialog()" >Close</button>
+  </div>
+</div>

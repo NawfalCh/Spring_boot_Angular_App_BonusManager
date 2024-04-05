@@ -1,0 +1,28 @@
+
+
+
+<table>
+  <thead>
+  <tr>
+    <th>Code</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Job Titel</th>
+    <th>Unit</th>
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let employee of employees">
+    <td>{{employee.code}}</td>
+    <td>{{employee.firstname}}</td>
+    <td>{{ employee.lastname}}</td>
+    <td>{{ employee.jobTitel}}</td>
+    <td>{{ employee.unit }}</td>
+    <td>
+      <button class="addbonus" (click)="addBonus(employee.employeeId)">add Bonus</button>
+      <button class="viewbonus" routerLink="/employee-bonuses/{{employee.employeeId}}" >view Bonus</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
