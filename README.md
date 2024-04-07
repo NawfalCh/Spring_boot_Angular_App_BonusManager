@@ -1,7 +1,7 @@
 <h1>Bonus Manager App</h1>
 <p> Bonus manager ist eine Applikation, die die Bonusse für die Personal in der Firma anhand der Bewertung ihren soziale Leistungen rechnet. </p>
 <p>Der Projekt ist fullstack implementiert,das Backend mit Java Frameworke Spring boot und ProstgeSQL als Datenbank, und Frontent mit Angular 16 .</p>
-<p> Die App ist zurzeit auf Amason aws Cloude verfügbar, unter der Link: <a href="http://bonusmanager.s3-website.eu-central-1.amazonaws.com" target="_blank">Bonus-Manager</a>,und  Rest API Dokumentation unter der Link: <a href="[http://bonusmanager.s3-website.eu-central-1.amazonaws.com](http://bonus-manager.eu-central-1.elasticbeanstalk.com/swagger-ui/index.html)" target="_blank">Bonus-Manger Rest API Backend</a> </p>
+<p> Die App ist zurzeit auf Amason aws Cloude verfügbar, unter der Link: <a href="http://bonusmanager.s3-website.eu-central-1.amazonaws.com" target="_blank">Bonus-Manager</a>, und  Rest API Dokumentation unter der Link: <a href="http://bonusmanager.s3-website.eu-central-1.amazonaws.com" target="_blank">Bonus-Manger Rest API Backend</a> </p>
 <p>Die Benuzung der App erfolgt nach dem Einlogen, man kann sich mit Rollen als CEO oder als HR einlogen, und jenach Rolle hat man bestimmte Autoritäten.</p>
 <h3>Login view:</h3>
 <p>nach erfolreiches Einlogen, schickt der Backend die Rolle des eingelogten Users als Responce DTO, Angular speichert der Responce im Browser LocalStorage, und führt der Eingelogter zum passenden Dashboard </p>
