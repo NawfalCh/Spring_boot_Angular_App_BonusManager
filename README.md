@@ -1,2 +1,3 @@
 <h1>Bonus Manager App</h1>
-<img src="Screenshots/Dashboard.PNG">
+<h3>Dashboard View</h3>
+<img src="Screenshots/Dashboard.PNG" width="400" height="400">
