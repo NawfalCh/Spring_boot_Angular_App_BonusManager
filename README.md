@@ -45,4 +45,4 @@
 <h3>Aprove Bonus View:</h3>
 <p>CEO muss eine Anmerkung im eingabefeld Remark schreiben, damit die "approve" Button aktiviert wird.</p>
 <img src="Screenshots/aproveBonus.PNG" width="600" height="500">
-<img src="Screenshots/aproveBonus.PNG" width="600" height="500">
+
